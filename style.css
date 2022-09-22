@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+svg text {
+    font-family: Lora;
+    letter-spacing: 5px;
+    stroke: #ffa5d8;
+    font-size: 80px;
+    font-weight: 700;
+    stroke-width: 3;
+    animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 62%, 65%)
+}
+
+100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+}
+}
+ 
+
+#wrapper {
+    background-color: rgb(235, 232, 232);
+    width: 500px;
+    height: auto;
+    margin: -20px auto;
+    border: 1px solid #be9ddf;
+    border-radius: 12px;
+}
+
+#catImage {
+    width: 100%;
+    height: 400px;
+    margin: 10px auto;
+    padding: 30px 50px;
+    border-radius: 30px;
+}
+
+#getCat {
+    background-color: black;
+    color: #ffa5d8;
+    width: 130px;
+    height: 30px;
+    margin-left: 36%;
+    margin-bottom: 5%;
+    font-weight: 500;
+    border: 1px solid #ffa5d8;
+    border-radius: 10px;
+    position: sticky;
+}
+
+#getCat:hover {
+    background-color: #b078e7;
+    color: whitesmoke;
+}
