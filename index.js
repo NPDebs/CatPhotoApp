@@ -11,12 +11,8 @@ const getCuteKitty = () => {
     .then(response => response.json())
     .then(json => {
         console.log(json[0]) //an array
-        console.log('helo') 
 
         // catImageDiv.innerHTML = `<img src='${json[0].url}'>`
         catImage.src = json[0].url
     })
 }
-
-
-//  <br> <p>${json[0]}</p>    width="400px" height="400px"
